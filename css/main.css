@@ -73,7 +73,7 @@ html {
   padding-top: 51px;
   max-width: 1500px;
   height: 458px;
-  margin: auto;
+  margin: 0 auto;
   background-image: url(../images/hero-images/hero-image@1x.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -106,5 +106,89 @@ html {
   font-weight: 400;
   font-family: "Work Sans";
   text-align: center;
+}
+
+.actual {
+  height: 400px;
+}
+
+.actual-container {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding-top: 80px;
+}
+
+.actual-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.desc-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.desc-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.actual-desc-item {
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.icon-table-lamp-svg {
+  width: 71px;
+  height: 72px;
+  margin-bottom: 50px;
+}
+
+.icon-flask-svg {
+  width: 61px;
+  height: 77px;
+  margin-bottom: 48px;
+}
+
+.icon-globe-svg {
+  width: 64px;
+  height: 73px;
+  margin-bottom: 42px;
+}
+
+.actual-title {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 67px;
+  color: #2c4755;
+  font-weight: 800;
+  font-family: "Work Sans";
+  margin: 0;
+}
+
+.actual-desc-text {
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 32px;
+  color: #575757;
+  font-weight: 400;
+  font-family: "Work Sans";
+  text-align: center;
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */
