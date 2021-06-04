@@ -1,1 +1,110 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+/* Общие стили */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-container {
+    width: 1550px;
+  }
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.header-container {
+  width: 1170px;
+  height: 91px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo-link {
+  display: inline-block;
+  width: 45px;
+  height: 30px;
+}
+
+.burger-menu {
+  width: 28px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-menu-svg {
+  width: 28px;
+  height: 16px;
+}
+
+.hero-container {
+  display: block;
+  padding-top: 51px;
+  max-width: 1500px;
+  height: 458px;
+  margin: auto;
+  background-image: url(../images/hero-images/hero-image@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-container .hero-container {
+    background-image: url(../images/hero-images/hero-image@2x.png);
+  }
+}
+
+.hero-title {
+  font-size: 55px;
+  letter-spacing: -3px;
+  line-height: 67px;
+  font-weight: 800;
+  font-family: "Work Sans";
+  text-align: center;
+  color: #10cab7;
+  margin-top: 0;
+  margin-bottom: 61px;
+}
+
+.title-desc {
+  font-size: 20px;
+  letter-spacing: -1px;
+  line-height: 32px;
+  color: #2c4755;
+  font-weight: 400;
+  font-family: "Work Sans";
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

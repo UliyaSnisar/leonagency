@@ -1,0 +1,28 @@
+.header-container{
+    width: 1170px;
+    height: 91px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-link{
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+}
+
+.burger-menu{
+    width: 28px;
+    height: 16px;
+    padding: 0;
+    border: none; 
+    background-color: transparent;
+}
+
+.burger-menu-svg{
+    width: 28px;
+    height: 16px;
+}
