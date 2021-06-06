@@ -1,0 +1,140 @@
+.services-wraper{
+    max-width: 1156px;
+    height: 656px;
+    padding-top: 100px;
+    margin: auto;
+    margin-bottom: 109px;
+
+    background-image: url(../images/services-background-images/services-image@1x.png),
+    url(../images/services-background-images/services-path@1x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 52px right 42px, bottom 0 right 0;
+    background-size: 301px 331px, 102px 436px;
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .services-wraper {
+        background-image: url(../images/services-background-images/services-image@2x.png),
+        url(../images/services-background-images/services-path@2x.png);
+        }
+    }
+}
+
+.services-title{
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: $secondary-title-color;
+    font-weight: 400;
+    font-family: $main-font;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 130px;
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 830px;
+}
+
+.services-list-item{
+    width: 370px;
+    margin-right: 44px;
+}
+
+.services-desc-title{
+    font-size: 20px;
+    line-height: 67px;
+    color: $black-title-color;
+    font-weight: 800;
+    font-family: $main-font;
+    margin: 0;
+}
+
+.printer-icon::before{
+    display: inline-block;
+    content: '';
+    width: 38px;
+    height: 37px;
+    background-image: url(../images/services-images/printer-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/printer-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+    margin-right: 50px;
+}
+
+.file-icon::before{
+    display: inline-block;
+    content: '';
+    width: 38px;
+    height: 37px;
+    background-image: url(../images/services-images/file-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/file-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+    margin-right: 50px;
+}
+
+.message-icon::before{
+    display: inline-block;
+    content: '';
+    width: 39px;
+    height: 36px;
+    background-image: url(../images/services-images/message-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/message-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+    margin-right: 50px;
+}
+
+.monitor-icon::before{
+    display: inline-block;
+    content: '';
+    width: 42px;
+    height: 31px;
+    background-image: url(../images/services-images/monitor-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/monitor-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+    margin-right: 50px;
+}
+
+.services-desc-text{
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 27px;
+    color: $main-text-color;
+    font-weight: 400;
+    font-family: $main-font;
+    margin-left: 87px;
+}

@@ -12,9 +12,9 @@ html {
           box-sizing: inherit;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1500) {
   .main-container {
-    width: 1550px;
+    width: 1500px;
   }
 }
 
@@ -34,7 +34,7 @@ html {
   height: auto;
 }
 
-.header-container {
+.header-wraper {
   width: 1170px;
   height: 91px;
   margin: 0 auto;
@@ -68,7 +68,7 @@ html {
   height: 16px;
 }
 
-.hero-container {
+.hero-wraper {
   display: block;
   padding-top: 51px;
   max-width: 1500px;
@@ -81,7 +81,7 @@ html {
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .hero-container .hero-container {
+  .hero-wraper .hero-container {
     background-image: url(../images/hero-images/hero-image@2x.png);
   }
 }
@@ -112,9 +112,10 @@ html {
   height: 400px;
 }
 
-.actual-container {
+.actual-wraper {
   margin: 0 auto;
   max-width: 1500px;
+  height: 400px;
   padding-top: 80px;
 }
 
@@ -190,5 +191,141 @@ html {
   font-family: "Work Sans";
   text-align: center;
   margin: 0;
+}
+
+.services-wraper {
+  max-width: 1156px;
+  height: 656px;
+  padding-top: 100px;
+  margin: auto;
+  margin-bottom: 109px;
+  background-image: url(../images/services-background-images/services-image@1x.png), url(../images/services-background-images/services-path@1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom 52px right 42px, bottom 0 right 0;
+  background-size: 301px 331px, 102px 436px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .services-wraper .services-wraper {
+    background-image: url(../images/services-background-images/services-image@2x.png), url(../images/services-background-images/services-path@2x.png);
+  }
+}
+
+.services-title {
+  font-size: 25px;
+  letter-spacing: -1px;
+  line-height: 35px;
+  color: #575757;
+  font-weight: 400;
+  font-family: "Work Sans";
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 130px;
+}
+
+.services-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 830px;
+}
+
+.services-list-item {
+  width: 370px;
+  margin-right: 44px;
+}
+
+.services-desc-title {
+  font-size: 20px;
+  line-height: 67px;
+  color: #1f2021;
+  font-weight: 800;
+  font-family: "Work Sans";
+  margin: 0;
+}
+
+.printer-icon::before {
+  display: inline-block;
+  content: '';
+  width: 38px;
+  height: 37px;
+  background-image: url(../images/services-images/printer-icon@1x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  margin-right: 50px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .printer-icon::before .printer {
+    background-image: url(../images/services-images/printer-icon@2x.png);
+  }
+}
+
+.file-icon::before {
+  display: inline-block;
+  content: '';
+  width: 38px;
+  height: 37px;
+  background-image: url(../images/services-images/file-icon@1x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  margin-right: 50px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .file-icon::before .printer {
+    background-image: url(../images/services-images/file-icon@2x.png);
+  }
+}
+
+.message-icon::before {
+  display: inline-block;
+  content: '';
+  width: 39px;
+  height: 36px;
+  background-image: url(../images/services-images/message-icon@1x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  margin-right: 50px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .message-icon::before .printer {
+    background-image: url(../images/services-images/message-icon@2x.png);
+  }
+}
+
+.monitor-icon::before {
+  display: inline-block;
+  content: '';
+  width: 42px;
+  height: 31px;
+  background-image: url(../images/services-images/monitor-icon@1x.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: text-top;
+  margin-right: 50px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .monitor-icon::before .printer {
+    background-image: url(../images/services-images/monitor-icon@2x.png);
+  }
+}
+
+.services-desc-text {
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: -1px;
+  line-height: 27px;
+  color: #4d4c4c;
+  font-weight: 400;
+  font-family: "Work Sans";
+  margin-left: 87px;
 }
 /*# sourceMappingURL=main.css.map */
