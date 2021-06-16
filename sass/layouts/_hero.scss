@@ -1,9 +1,7 @@
-.hero-wraper{
-    display: block;
-    padding-top: 51px;
-    max-width: 1500px;
+.hero{
+    max-width: 1920px;
     height: 458px;
-    margin: 0 auto;
+    margin: auto;
 
     background-image: url(../images/hero-images/hero-image@1x.png);
     background-repeat: no-repeat;
@@ -15,6 +13,11 @@
       .hero-container {
         background-image: url(../images/hero-images/hero-image@2x.png);
         }
+    }
+
+    .container{
+        display: block;
+        padding-top: 51px;
     }
 }
 

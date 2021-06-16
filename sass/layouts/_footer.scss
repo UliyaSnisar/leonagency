@@ -1,0 +1,25 @@
+.footer{
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-wraper{
+    height: 101px;
+    background-color: $footer-background-color;
+    padding-top: 44px;
+    margin: 0 auto;
+}
+
+.footer-desc{
+    font-size: 15px;
+    line-height: 27px;
+    color: $white-text-color;
+    font-weight: 800;
+    font-family: $main-font;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-desc-text{
+    color: $accent-color;
+}

@@ -1,17 +1,19 @@
-.header-wraper{
-    width: 1170px;
-    height: 91px;
-    margin: 0 auto;
+.header{
+    display: block;
+}
 
+.header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 91px;
 }
 
 .header-logo-link{
     display: inline-block;
     width: 45px;
     height: 30px;
+    margin-left: 14px;
 }
 
 .burger-menu{
@@ -20,9 +22,11 @@
     padding: 0;
     border: none; 
     background-color: transparent;
+    margin-right: 102px;
 }
 
 .burger-menu-svg{
     width: 28px;
     height: 16px;
 }
+

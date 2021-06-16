@@ -1,6 +1,14 @@
 @import "./base/base";
 @import "./utils/variables";
+@import "./components/container";
+@import "./components/subtitle";
+@import "./components/desc-title";
+@import "./components/text";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/actual";
 @import "./layouts/services";
+@import "./layouts/portfolio";
+@import "./layouts/about";
+@import "./layouts/contacts";
+@import "./layouts/footer";
