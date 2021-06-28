@@ -18,12 +18,52 @@
                 srcset="./images/header-images/logo@2x.png 2x" 
                 alt="Logo">
             </a>
-    
-            <button class="burger-menu" type="button">
-                <svg class="burger-menu-svg">
-                    <use href="./images/sprite.svg#icon-burger-menu"></use>
-                </svg> 
-            </button>
+
+            <div class="nav-menu-wraper">
+                <div class="nav-menu">
+                    <button class="close-btn" type="button">
+                        <img class="close-img img" src="./images/header-images/close-icon.png" alt="">
+                    </button>
+                    <h2 class="nav-menu-title">Menu</h2>
+                    <ul class="page-navigation-list list">
+                        <li>
+                            <a class="nav-menu-link link" href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-menu-link link" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="nav-menu-link link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="nav-menu-link link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <h2 class="nav-menu-title">Get in Touch</h2>
+                    <ul class="navigation-contact-list list">
+                        <li>
+                            <a class="nav-contact-link link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+                    <h2 class="nav-menu-title">Get Social</h2>
+                    <ul class="social-links-list list">
+                        <li>
+                            <a class="social-link link" href="">Behance</a>
+                        </li>
+                        <li>
+                            <a class="social-link link" href="">Dribble</a>
+                        </li>
+                        <li>
+                            <a class="social-link link" href="">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="btn-menu " type="button" aria-expanded="false">
+                    <svg class="burger-menu-svg" aria-label="Button of main menu">
+                        <use href="./images/sprite.svg#icon-burger-menu" class="burger"></use>
+                    </svg> 
+                </button>
+            </div>
         </div>
     </header>
 
@@ -78,6 +118,7 @@
         </section>
     
         <section class="services">
+            <span class="main-title" id="services">services</span>
             <div class="container">
                 <h2 class="subtitle">Don't be busy, be productive</h2>
                 <ul class="services-list list">
@@ -112,42 +153,46 @@
         </section>
     
         <section class="portfolio">
-            <h2 class="subtitle">If you do it right, it will last forever.</h2>
-            <ul class="portfolio-list list">
-                <li class="portfolio-list-item">
-                    <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
-                    srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
-                    alt="Image">
-                    <div class="portfolio-desc-wraper">
-                        <h4 class="desc-title">Project Here</h4>
-                        <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
-                            manifest in so many surprising and.</p>
-                    </div>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
-                    srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
-                    alt="Image">
-                    <div class="portfolio-desc-wraper">
-                        <h4 class="portfolio-desc-title">Project Here</h4>
-                        <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
-                            manifest in so many surprising and.</p>
-                    </div>
-                </li>
-                <li class="portfolio-list-item">
-                    <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
-                    srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
-                    alt="Image">
-                    <div class="portfolio-desc-wraper">
-                        <h4 class="portfolio-desc-title">Project Here</h4>
-                        <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
+            <span class="main-title" id="portfolio">portfolio</span>
+            <div class="portfolio-wraper">
+                <h2 class="subtitle">If you do it right, it will last forever.</h2>
+                <ul class="portfolio-list list">
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
+                        srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
+                        alt="Image">
+                        <div class="portfolio-desc-wraper">
+                            <h4 class="desc-title">Project Here</h4>
+                            <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
                                 manifest in so many surprising and.</p>
-                    </div>
-                </li>
-            </ul>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
+                        srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
+                        alt="Image">
+                        <div class="portfolio-desc-wraper">
+                            <h4 class="portfolio-desc-title">Project Here</h4>
+                            <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
+                                manifest in so many surprising and.</p>
+                        </div>
+                    </li>
+                    <li class="portfolio-list-item">
+                        <img class="portfolio-list-item-img img" src="./images/portfolio-images/portfolio-image@1x.png" 
+                        srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
+                        alt="Image">
+                        <div class="portfolio-desc-wraper">
+                            <h4 class="portfolio-desc-title">Project Here</h4>
+                            <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
+                                    manifest in so many surprising and.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     
         <section class="about">
+            <span class="main-title" id="about">about</span>
             <div class="container">
                 <h2 class="subtitle">Less is more work</h2>
                 <div class="about-desc-wraper">
@@ -165,7 +210,8 @@
         </section>
     
         <section class="contacts">
-            <div class="container">
+            <span class="main-title" id="contact">contact</span>
+            <div class="container contacts-wraper">
                 <h2 class="subtitle">We are born to create</h2>
                 <div class="contacts-caption-container">
                     <b class="contacts-caption">Feel free to drop us a line at:</b>

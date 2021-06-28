@@ -1,28 +1,144 @@
 .header{
     display: block;
-}
+    margin: 0 auto;
+    max-width: 1920px;
 
-.header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 91px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 91px;
+    }
 }
 
 .header-logo-link{
-    display: inline-block;
-    width: 45px;
-    height: 30px;
-    margin-left: 14px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: inline-block;
+        width: 45px;
+        height: 30px;
+        margin-left: 14px;
+      }
 }
 
-.burger-menu{
-    width: 28px;
-    height: 16px;
+.nav-menu-wraper{
+    position: relative;
+
+    &:hover .nav-menu{
+        opacity: 1;
+    }
+}
+
+.nav-menu{
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 700px;
+        background-color: #2c4755;
+        z-index: 50;
+        padding-top: 33px;
+        padding-left: 65px;
+        opacity: 0;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+      @media screen and (min-width: 768px) {
+        top: 0;
+        left: 0;
+        width: 545px;
+        height: 1065px;
+      }
+}
+
+.close-btn{
     padding: 0;
     border: none; 
     background-color: transparent;
-    margin-right: 102px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav-menu-title{
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: $nav-title-color;
+    font-weight: 400;
+    font-family: $main-font;
+}
+
+.page-navigation-list{
+    margin-bottom: 59px;
+}
+
+.nav-menu-link{
+    display: block;
+    font-size: 29px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: $white-text-color;
+    font-weight: 400;
+    font-family: $main-font;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.navigation-contact-list{
+    margin-bottom: 44px;
+}
+
+.nav-contact-link{
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: $white-text-color;
+    font-weight: 400;
+    font-family: $main-font;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.social-link{
+    font-size: 21px;
+    letter-spacing: -1px;
+    line-height: 35px;
+    color: $white-text-color;
+    font-weight: 400;
+    font-family: $main-font;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        color: $accent-color;
+    }
+}
+
+.btn-menu {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 28px;
+        height: 16px;
+        padding: 0;
+        border: none; 
+        background-color: transparent;
+        margin-right: 14px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        margin-right: 102px;
+      }
 }
 
 .burger-menu-svg{

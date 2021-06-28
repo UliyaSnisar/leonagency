@@ -27,6 +27,19 @@
         }
     }
 
+    .main-title {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 162px;
+        letter-spacing: -8px;
+        line-height: 195px;
+        color: $strong-title-color;
+        font-weight: 800;
+        font-family: $main-font;
+    }
+
     .subtitle{
         margin-bottom: 154px;
     }

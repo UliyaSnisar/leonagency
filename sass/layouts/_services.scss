@@ -1,17 +1,22 @@
 .services{
-    height: 826px;
-    padding-top: 67px;
-    padding-bottom: 103px;
+    max-width: 1920px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        height: 875px;
+        padding-bottom: 75px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        height: 826px;
+        padding-top: 67px;
+        padding-bottom: 103px;
+      }
 
     .container{
-        height: 670px;
-        padding-top: 104px;
-
         background-image: url(../images/services-background-images/services-image@1x.png),
         url(../images/services-background-images/services-path@1x.png);
         background-repeat: no-repeat;
-        background-position: bottom 52px right 42px, bottom 0 right 0;
-        background-size: 301px 331px, 102px 436px;
+
         @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
@@ -20,42 +25,119 @@
             url(../images/services-background-images/services-path@2x.png);
             }
         }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            height: 800px;
+            padding-top: 95px;
+            background-size: 200px 531px, 49px 600px;
+            background-position: bottom 30px right 20px, bottom 0 right 0;
+          }
+        
+          @media screen and (min-width: 768px) {
+            height: 670px;
+            padding-top: 104px;
+            background-size: 301px 331px, 102px 436px;
+            background-position: bottom 52px right 42px, bottom 0 right 0;
+          }
+    }
+
+    .main-title {
+        position: absolute;
+
+        transform: translate(-50%, -50%);
+        letter-spacing: -8px;
+        line-height: 195px;
+        color: $strong-title-color;
+        font-weight: 800;
+        font-family: $main-font;
+        z-index: -5;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            font-size: 90px;
+            top: 10%;
+            left: 50%;
+          }
+        
+          @media screen and (min-width: 768px) {
+            font-size: 162px;
+            top: 15%;
+            left: 50%;
+          }
     }
 
     .subtitle{
-        margin-bottom: 145px;
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            margin-bottom: 70px;
+            font-size: 24px;
+        }
+        
+        @media screen and (min-width: 768px) {
+            margin-bottom: 145px;
+        }
     }
 }
 
 .services-list{
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-left: 15px;
+    }
 }
 
 .printer{
-    width: 343px;
-    height: 151px;
-    margin-right: 61px;
-    margin-bottom: 46px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 265px;
+        margin-bottom: 10px;
+    }
+    
+      @media screen and (min-width: 768px) {
+        width: 343px;
+        height: 151px;
+        margin-right: 61px;
+        margin-bottom: 46px;
+      }
 }
 
 .file{
-    width: 358px;
-    height: 121px;
-    margin-right: 394px;
-    margin-bottom: 75px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 358px;
+        height: 121px;
+        margin-right: 394px;
+        margin-bottom: 75px;
+      }
 }
 
 .message{
-    width: 338px;
-    height: 153px;
-    margin-right: 59px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 338px;
+        height: 153px;
+        margin-right: 59px;
+        margin-bottom: 0;
+      }
 }
 
 .monitor{
-    width: 369px;
-    height: 122px;
-    margin-right: 386px;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 369px;
+        height: 122px;
+        margin-right: 386px;
+        margin-bottom: 0;
+      }
 }
 
 .services-desc-title{
@@ -65,8 +147,6 @@
 .printer-icon::before{
     display: inline-block;
     content: '';
-    width: 38px;
-    height: 37px;
     background-image: url(../images/services-images/printer-icon@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -78,14 +158,23 @@
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: text-top;
-    margin-right: 50px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 38px;
+        height: 37px;
+        margin-right: 50px;
+      }
 }
 
 .file-icon::before{
     display: inline-block;
     content: '';
-    width: 38px;
-    height: 37px;
     background-image: url(../images/services-images/file-icon@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -97,14 +186,23 @@
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: text-top;
-    margin-right: 46px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 38px;
+        height: 37px;
+        margin-right: 46px;
+      }
 }
 
 .message-icon::before{
     display: inline-block;
     content: '';
-    width: 39px;
-    height: 36px;
     background-image: url(../images/services-images/message-icon@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -116,14 +214,23 @@
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: text-top;
-    margin-right: 45px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 39px;
+        height: 36px;
+        margin-right: 45px;
+      }
 }
 
 .monitor-icon::before{
     display: inline-block;
     content: '';
-    width: 42px;
-    height: 31px;
     background-image: url(../images/services-images/monitor-icon@1x.png);
     @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -135,12 +242,37 @@
     background-size: contain;
     background-repeat: no-repeat;
     vertical-align: text-top;
-    margin-right: 45px;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+    
+      @media screen and (min-width: 768px) {
+        width: 42px;
+        height: 31px;
+        margin-right: 45px;
+      }
 }
 
 .services-desc-text{
     display: inline-block;
-    line-height: 27px;
     color: $main-text-color;
-    margin-left: 85px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        margin-left: 45px;
+        .text{
+            font-size: 7px;
+            line-height: 20px;
+        }
+      }
+    
+      @media screen and (min-width: 768px) {
+        margin-left: 85px;
+        line-height: 27px;
+      }
+
 }

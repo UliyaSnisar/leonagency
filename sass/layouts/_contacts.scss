@@ -1,11 +1,31 @@
 .contacts{
     height: 721px;
     padding-top: 184px;
+    background-color: $secondary-background-color;
     margin: 0 auto;
+
+    .main-title {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 162px;
+        letter-spacing: -8px;
+        line-height: 195px;
+        color: $secondary-strong-title-color;
+        font-weight: 800;
+        font-family: $main-font;
+
+    }
 
     .subtitle{
         margin-bottom: 151px;
     }
+}
+
+.contacts-wraper{
+    position: relative;
+    z-index: 5;
 }
 
 .contacts-caption-container{
