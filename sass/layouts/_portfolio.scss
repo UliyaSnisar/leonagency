@@ -1,43 +1,63 @@
 .portfolio{
     max-width: 1920px;
-    height: 975px;
     background-color: $secondary-background-color;
-    padding-top: 179px;
-    margin: auto;
+    margin: 0 auto;
 
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        width: 320px;
-        margin: 0 auto;
+      @media screen and (min-width: 320px) {
+        padding-top: 90px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        height: 800px;
+        padding-top: 90px;
       }
     
-      @media screen and (min-width: 768px) and (max-width: 1499) {
-        width: 768px;
-      }
-    
-      @media screen and (min-width: 1500px) {
-        width: 1170px;
+      @media screen and (min-width: 1170px) {
+        height: 975px;
+        padding-top: 74px;
       }
 
     .main-title {
-        position: absolute;
-        top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 162px;
-        letter-spacing: -8px;
-        line-height: 195px;
         color: $secondary-strong-title-color;
-        font-weight: 800;
-        font-family: $main-font;
+        z-index: 0;
+
+        @media screen and (min-width: 320px) {
+            top: 8%;
+            left: 50%;
+          }
+         
+          @media screen and (min-width: 768px) {
+            top: 18%;
+            left: 50%;
+          }
+        
+          @media screen and (min-width: 1170px) {
+            top: 15%;
+            left: 50%;
+          }
     }
 
     .portfolio-wraper{
         position: relative;
         z-index: 5;
+
+        @media screen and (min-width: 320px) {
+            padding-top: 50px;
+        }
+         
+        @media screen and (min-width: 768px) {
+            padding-top: 50px;
+        }
+        
+          @media screen and (min-width: 1170px) {
+            padding-top: 100px;
+          }
     }
 
     .subtitle{
+      @media screen and (min-width: 1170px) {
         margin-bottom: 101px;
+      }
     }
 
     .desc-title{
@@ -48,30 +68,86 @@
 .portfolio-list{
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 320px) {
+        align-items: center;
+        flex-direction: column;
+      }
+     
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
 }
 
 .portfolio-list-item{
-    width: 501px;
-    height: 504px;
     background-color: $main-background-color;
 
-    &:not(:last-child){
-        margin-right: 30px;
+    @media screen and (min-width: 320px) {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+     
+    @media screen and (min-width: 768px) {
+        width: 230px;
+
+        &:not(:last-child){
+            margin-right: 15px;
+        }
+    }
+    
+    @media screen and (min-width: 1170px) {
+    width: 501px;
+    height: 504px;
+
+        &:not(:last-child){
+            margin-right: 37px;
+        }
     }
 }
 
 .portfolio-list-item-img{
-    width: 501px;
-    height: 371px;
+
+    @media screen and (min-width: 320px) {
+        width: 270px;
+        height: 270px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        width: 270px;
+        height: 270px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        width: 501px;
+        height: 371px;
+      }
 }
 
 .portfolio-desc-wraper{
-    padding-left: 31px;
-    padding-right: 74px;
+
+    @media screen and (min-width: 320px) {
+        padding-left: 31px;
+        padding-right: 35px;
+    }
+     
+    @media screen and (min-width: 768px) {
+        padding-left: 31px;
+        padding-right: 35px;
+    }
+    
+    @media screen and (min-width: 1170px) {
+        padding-left: 30px;
+        padding-right: 0;
+    } 
 }
 
 .portfolio-desc{
     line-height: 27px;
     color: $main-text-color;
     margin: 0;
+
+    @media screen and (min-width: 1170px) {
+      display: inline-block;
+      width: 396px;
+    }
 }

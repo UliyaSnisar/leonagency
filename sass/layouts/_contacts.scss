@@ -1,25 +1,57 @@
 .contacts{
-    height: 721px;
-    padding-top: 184px;
+    max-width: 1920px;
     background-color: $secondary-background-color;
     margin: 0 auto;
 
-    .main-title {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 162px;
-        letter-spacing: -8px;
-        line-height: 195px;
-        color: $secondary-strong-title-color;
-        font-weight: 800;
-        font-family: $main-font;
+    @media screen and (min-width: 320px) {
+        height: 450px;
+        padding-top: 70px;
+    }
+     
+    @media screen and (min-width: 768px) {
+        height: 550px;
+        padding-top: 70px;
+    }
+    
+    @media screen and (min-width: 1170px) {
+        height: 721px;
+        padding-top: 88px;
+    }
 
+    .container {
+        @media screen and (min-width: 320px) {
+            padding-top: 45px;
+        }
+      
+        @media screen and (min-width: 1170px) {
+            padding-top: 90px;
+        }
+    }
+
+    .main-title {
+        color: $secondary-strong-title-color;
+        z-index: 0;
+
+        @media screen and (min-width: 320px) {
+            top: 24%;
+            left: 50%;
+          }
+         
+          @media screen and (min-width: 768px) {
+            top: 20%;
+            left: 50%;
+          }
+        
+          @media screen and (min-width: 1170px) {
+            top: 20%;
+            left: 50%;
+          }
     }
 
     .subtitle{
-        margin-bottom: 151px;
+        @media screen and (min-width: 1170px) {
+            margin-bottom: 152px;
+        }
     }
 }
 
@@ -34,44 +66,89 @@
 }
 
 .contacts-caption{
-    font-size: 55px;
     letter-spacing: -3px;
-    line-height: 67px;
     color: $main-title-color;
     font-weight: 800;
     font-family: $main-font;
-    margin-bottom: 29px;
+
+    @media screen and (min-width: 320px) {
+        font-size: 27px;
+        line-height: 40px;
+        margin-bottom: 15px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        font-size: 45px;
+        line-height: 57px;
+        margin-bottom: 29px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        font-size: 55px;
+        line-height: 67px;
+        margin-bottom: 29px;
+      }
 }
 
 .email-link{
-    font-size: 50px;
     letter-spacing: -2px;
-    line-height: 67px;
     color: $accent-color;
     font-weight: 800;
     font-family: $main-font;
-    margin-left: 45px;
-    margin-bottom: 52px;
+
+    @media screen and (min-width: 320px) {
+        font-size: 27px;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+     
+    @media screen and (min-width: 768px) {
+        font-size: 45px;
+        line-height: 57px;
+        margin-left: 45px;
+        margin-bottom: 52px;
+    }
+    
+    @media screen and (min-width: 1170px) {
+        font-size: 50px;
+        line-height: 67px;
+    }
 }
 
 .contacts-social-links{
     display: flex;
-    margin-left: 106px;
+     
+      @media screen and (min-width: 768px) {
+        margin-left: 104px;
+      }
 }
 
 .contacts-social-links-title{
-    font-size: 15px;
     letter-spacing: -1px;
-    line-height: 27px;
     color: $secondary-text-color;
     font-weight: 400;
     font-family: $main-font;
     margin: 0;
+
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 20px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        font-size: 15px;
+        line-height: 27px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        font-size: 15px;
+        line-height: 27px;
+      }
 }
 
 .contacts-social-list{
     display: flex;
-    margin-left: 43px;
+    margin-left: 46px;
 }
 
 .contacts-social-list-item:not(:last-child){
@@ -79,6 +156,14 @@
 }
 
 .contacts-social-link{
-    width: 22px;
-    height: 22px;
+
+    @media screen and (min-width: 320px) {
+        width: 12px;
+        height: 12px;
+    }
+     
+    @media screen and (min-width: 768px) {
+        width: 22px;
+        height: 22px;
+    }
 }

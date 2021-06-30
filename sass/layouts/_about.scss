@@ -1,74 +1,162 @@
 .about{
-    height: 828px;
-    padding-top: 98px;
-    padding-bottom: 73px;
+
     margin: 0 auto;
+
+    @media screen and (min-width: 320px) {
+        padding-top: 50px;
+        padding-bottom: 35px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 35px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        height: 822px;
+        padding-top: 92px;
+        padding-bottom: 73px;
+      }
 
     .container{
         position: relative;
-        height: 657px;
-        margin: 0 auto;
-        padding-top: 102px;
 
-        background-image: url(../images/about-background-images/about-grey-image@1x.png),
-        url(../images/about-background-images/about-long-grey-img@1x.png),
-        url(../images/about-background-images/about-green-img@1x.png);
-        background-repeat: no-repeat;
-        background-position: top 266px left 13px, top 203px left 0, top 242px left 259px;
-        background-size: 301px 331px, 111px 454px, 190px 293px;
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-            .about-container {
-            background-image: url(../images/about-background-images/about-grey-image@2x.png),
-            url(../images/about-background-images/about-long-grey-img@2x.png),
-            url(../images/about-background-images/about-green-img@2x.png);
+        @media screen and (min-width: 320px) {
+            height: 480px;
+            padding-top: 30px;
+          }
+         
+        @media screen and (min-width: 768px) {
+            height: 659px;
+            padding-top: 45px;
+
+            background-image: url(../images/about-background-images/about-grey-image@1x.png),
+            url(../images/about-background-images/about-long-grey-img@1x.png),
+            url(../images/about-background-images/about-green-img@1x.png);
+            background-repeat: no-repeat;
+            @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                .about-container {
+                background-image: url(../images/about-background-images/about-grey-image@2x.png),
+                url(../images/about-background-images/about-long-grey-img@2x.png),
+                url(../images/about-background-images/about-green-img@2x.png);
+                }
             }
+            background-position: top 266px left 13px, top 203px left 0, top 242px left 259px;
+            background-size: 301px 331px, 111px 454px, 190px 293px;
         }
+        
+          @media screen and (min-width: 1170px) {
+            padding-top: 102px;
+          }
     }
 
     .main-title {
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 162px;
-        letter-spacing: -8px;
-        line-height: 195px;
         color: $strong-title-color;
-        font-weight: 800;
-        font-family: $main-font;
+
+        @media screen and (min-width: 320px) {
+            top: 12%;
+            left: 50%;
+        }
+         
+        @media screen and (min-width: 768px) {
+            top: 12%;
+            left: 50%;
+        }
+        
+        @media screen and (min-width: 1170px) {
+            top: 20%;
+            left: 50%;
+        }
     }
 
     .subtitle{
-        margin-bottom: 154px;
+          @media screen and (min-width: 1170px) {
+            margin-bottom: 158px;
+          }
     }
 }
 
 .about-desc-wraper{
     position: absolute;
-    top: 274px;
-    right: 0;
-    width: 560px;
-    height: 303px;
+
+    @media screen and (min-width: 320px) {
+        top: 150px;
+        right: 0;
+        width: 300px;
+        height: 303px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        top: 150px;
+        right: 0;
+        width: 400px;
+        height: 250px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        top: 278px;
+        right: 0;
+        width: 565px;
+        height: 289px;
+      }
 }
 
 .about-desc-title{
-    line-height: 40px;
     color: $secondary-text-color;
 
-    &::after{
-    display: inline-block;
-    content: '';
-    width: 271px;
-    height: 3px;
-    background-color: $accent-color;
-    margin-top: 57px;
-    }
+    @media screen and (min-width: 320px) {
+        font-size: 15px;
+        line-height: 30px;
+
+        &::after{
+            display: inline-block;
+            content: '';
+            width: 255px;
+            height: 2px;
+            background-color: $accent-color;
+            margin-top: 25px;
+            }
+      }
+     
+      @media screen and (min-width: 768px) {
+
+        &::after{
+            display: inline-block;
+            content: '';
+            width: 255px;
+            height: 2px;
+            background-color: $accent-color;
+            margin-top: 30px;
+            }
+      }
+    
+      @media screen and (min-width: 1170px) {
+        line-height: 40px;
+
+        &::after{
+            display: inline-block;
+            content: '';
+            width: 270px;
+            height: 2px;
+            background-color: $accent-color;
+            margin-top: 55px;
+            }
+      }
 }
 
 .about-desc{
-    line-height: 32px;
     color: $grey-text-color;
     margin: 0;
+
+    @media screen and (min-width: 320px) {
+        font-size: 12px;
+        line-height: 22px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        font-size: 15px;
+        line-height: 23px;
+      }
 }

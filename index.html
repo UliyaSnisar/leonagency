@@ -14,12 +14,15 @@
     <header class="header">
         <div class="container">
             <a class="header-logo-link link" href="./index.html">
-                <img class="logo-img img" src="./images/header-images/logo@1x.png" 
-                srcset="./images/header-images/logo@2x.png 2x" 
-                alt="Logo">
+                <img class="logo-img img" src="/images/header-images/logo@1x.png" alt="Logo">
             </a>
 
             <div class="nav-menu-wraper">
+                <button class="btn-menu " type="button" aria-expanded="false">
+                    <svg class="burger-menu-svg" aria-label="Button of main menu">
+                        <use href="./images/sprite.svg#icon-burger-menu" class="burger"></use>
+                    </svg> 
+                </button>
                 <div class="nav-menu">
                     <button class="close-btn" type="button">
                         <img class="close-img img" src="./images/header-images/close-icon.png" alt="">
@@ -57,12 +60,8 @@
                             <a class="social-link link" href="">Twitter</a>
                         </li>
                     </ul>
+                    <p class="nav-menu-bottom-title">&copy; leon.com 2019</p>
                 </div>
-                <button class="btn-menu " type="button" aria-expanded="false">
-                    <svg class="burger-menu-svg" aria-label="Button of main menu">
-                        <use href="./images/sprite.svg#icon-burger-menu" class="burger"></use>
-                    </svg> 
-                </button>
             </div>
         </div>
     </header>
@@ -172,7 +171,7 @@
                         srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
                         alt="Image">
                         <div class="portfolio-desc-wraper">
-                            <h4 class="portfolio-desc-title">Project Here</h4>
+                            <h4 class="desc-title">Project Here</h4>
                             <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
                                 manifest in so many surprising and.</p>
                         </div>
@@ -182,7 +181,7 @@
                         srcset="./images/portfolio-images/portfolio-image@2x.png 2x" 
                         alt="Image">
                         <div class="portfolio-desc-wraper">
-                            <h4 class="portfolio-desc-title">Project Here</h4>
+                            <h4 class="desc-title">Project Here</h4>
                             <p class="portfolio-desc text">My creative ability is very difficult to measure because it can 
                                     manifest in so many surprising and.</p>
                         </div>
@@ -211,7 +210,7 @@
     
         <section class="contacts">
             <span class="main-title" id="contact">contact</span>
-            <div class="container contacts-wraper">
+            <div class="contacts-wraper container">
                 <h2 class="subtitle">We are born to create</h2>
                 <div class="contacts-caption-container">
                     <b class="contacts-caption">Feel free to drop us a line at:</b>
@@ -223,21 +222,18 @@
                             <li class="contacts-social-list-item">
                                 <a class="contacts-social-link" href="#" aria-label="Behance">
                                     <img class="contacts-social-link-img img" src="./images/contacts-images/google@1x.png" 
-                                    srcset="./images/contacts-images/google@2x.png 2x" 
                                     alt="Image">
                                 </a>
                             </li>
                             <li class="contacts-social-list-item">
                                 <a class="contacts-social-link" href="#" aria-label="Dribble">
                                     <img class="contacts-social-link-img img" src="./images/contacts-images/dribble@1x.png" 
-                                    srcset="./images/contacts-images/dribble@2x.png 2x" 
                                     alt="Image">
                                 </a>
                             </li>
                             <li class="contacts-social-list-item">
                                 <a class="contacts-social-link" href="#" aria-label="Twitter">
                                     <img class="contacts-social-link-img img" src="./images/contacts-images/twitter@1x.png" 
-                                    srcset="./images/contacts-images/twitter@2x.png 2x" 
                                     alt="Image">
                                 </a>
                             </li>
