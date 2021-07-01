@@ -211,20 +211,21 @@ section {
 }
 
 .nav-menu {
-  position: absolute;
   background-color: #2c4755;
   z-index: 50;
   opacity: 0;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 320px) {
   .nav-menu {
+    position: fixed;
     top: 0;
     right: 0;
-    width: 300px;
-    height: 700px;
+    width: 100%;
+    height: 100%;
     padding-top: 15px;
     padding-left: 32px;
     padding-bottom: 30px;
@@ -233,6 +234,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .nav-menu {
+    position: absolute;
     top: 0;
     right: 108px;
     width: 300px;
@@ -642,19 +644,18 @@ section {
 }
 
 .services {
-  max-width: 1920px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 320px) {
   .services {
-    height: 875px;
+    padding-top: 80px;
     padding-bottom: 75px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .services {
-    height: 826px;
     padding-top: 67px;
     padding-bottom: 103px;
   }
@@ -662,46 +663,25 @@ section {
 
 @media screen and (min-width: 1170px) {
   .services {
-    height: 832px;
     padding-top: 70px;
-    padding-bottom: 0;
-  }
-}
-
-.services .container {
-  background-image: url(../images/services-background-images/services-image@1x.png), url(../images/services-background-images/services-path@1x.png);
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .services .container .services-wraper {
-    background-image: url(../images/services-background-images/services-image@2x.png), url(../images/services-background-images/services-path@2x.png);
   }
 }
 
 @media screen and (min-width: 320px) {
   .services .container {
-    height: 800px;
-    padding-top: 95px;
-    background-size: 200px 531px, 49px 600px;
-    background-position: bottom 30px right 20px, bottom 0 right 0;
+    padding-top: 50px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .services .container {
-    height: 656px;
     padding-top: 45px;
-    background-size: 350px 400px, 80px 500px;
-    background-position: bottom 30px right 35px, bottom 0 right 0;
   }
 }
 
 @media screen and (min-width: 1170px) {
   .services .container {
     padding-top: 90px;
-    background-size: 301px 331px, 102px 436px;
-    background-position: bottom 52px right 42px, bottom 0 right 0;
   }
 }
 
@@ -711,14 +691,14 @@ section {
 
 @media screen and (min-width: 320px) {
   .services .main-title {
-    top: 10%;
+    top: 9%;
     left: 50%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .services .main-title {
-    top: 13%;
+    top: 9%;
     left: 50%;
   }
 }
@@ -736,6 +716,55 @@ section {
   }
 }
 
+.services-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 320px) {
+  .services-wraper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-image: url(../images/services-background-images/services-path@1x.png);
+    background-position: bottom 0 right 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .services-wraper .services-wraper {
+    background-image: url(../images/services-background-images/services-path@1x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-wraper {
+    background-image: url(../images/services-background-images/services-path@1x.png);
+    background-position: bottom 0 right 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .services-wraper .services-wraper {
+    background-image: url(../images/services-background-images/services-path@1x.png);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .services-wraper {
+    height: 436px;
+    background-image: url(../images/services-background-images/services-path@1x.png);
+    background-position: top 0 right 0;
+  }
+}
+
+@media screen and (min-width: 1170px) and (min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1170px) and (min-resolution: 192dpi), screen and (min-width: 1170px) and (min-resolution: 2dppx) {
+  .services-wraper .services-wraper {
+    background-image: url(../images/services-background-images/services-path@1x.png);
+  }
+}
+
 .services-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,12 +776,24 @@ section {
 @media screen and (min-width: 320px) {
   .services-list {
     margin-left: 15px;
+    margin-bottom: 80px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1169px) {
   .services-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .services-list {
+    width: 813px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -776,7 +817,6 @@ section {
 @media screen and (min-width: 768px) {
   .printer {
     width: 300px;
-    height: 151px;
     margin-bottom: 46px;
   }
 }
@@ -784,7 +824,6 @@ section {
 @media screen and (min-width: 1170px) {
   .printer {
     width: 341px;
-    height: 152px;
     margin-bottom: 46px;
   }
 }
@@ -799,7 +838,6 @@ section {
 @media screen and (min-width: 768px) {
   .file {
     width: 300px;
-    height: 121px;
     margin-bottom: 75px;
   }
 }
@@ -807,8 +845,6 @@ section {
 @media screen and (min-width: 1170px) {
   .file {
     width: 358px;
-    height: 122px;
-    margin-right: 394px;
     margin-bottom: 75px;
   }
 }
@@ -823,7 +859,6 @@ section {
 @media screen and (min-width: 768px) {
   .message {
     width: 300px;
-    height: 153px;
     margin-bottom: 0;
   }
 }
@@ -831,7 +866,6 @@ section {
 @media screen and (min-width: 1170px) {
   .message {
     width: 337px;
-    height: 151px;
     margin-bottom: 0;
   }
 }
@@ -846,7 +880,6 @@ section {
 @media screen and (min-width: 768px) {
   .monitor {
     width: 300px;
-    height: 122px;
     margin-bottom: 0;
   }
 }
@@ -854,8 +887,6 @@ section {
 @media screen and (min-width: 1170px) {
   .monitor {
     width: 369px;
-    height: 122px;
-    margin-right: 386px;
     margin-bottom: 0;
   }
 }
@@ -1054,6 +1085,31 @@ section {
   }
 }
 
+.services-img {
+  width: 301px;
+  height: 331px;
+}
+
+@media screen and (min-width: 320px) {
+  .services-img {
+    margin-bottom: 52px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-img {
+    margin-top: 53px;
+    margin-left: 430px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .services-img {
+    margin-top: 53;
+    margin-left: 0;
+  }
+}
+
 .portfolio {
   max-width: 1920px;
   background-color: #fafafa;
@@ -1119,7 +1175,7 @@ section {
 
 @media screen and (min-width: 768px) {
   .portfolio .portfolio-wraper {
-    padding-top: 50px;
+    padding-top: 60px;
   }
 }
 
@@ -1191,11 +1247,20 @@ section {
 
 @media screen and (min-width: 1170px) {
   .portfolio-list-item {
+    width: 350px;
+  }
+  .portfolio-list-item:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .portfolio-list-item {
     width: 501px;
     height: 504px;
   }
   .portfolio-list-item:not(:last-child) {
-    margin-right: 37px;
+    margin-right: 35px;
   }
 }
 
@@ -1214,6 +1279,13 @@ section {
 }
 
 @media screen and (min-width: 1170px) {
+  .portfolio-list-item-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
   .portfolio-list-item-img {
     width: 501px;
     height: 371px;
@@ -1250,6 +1322,13 @@ section {
 @media screen and (min-width: 1170px) {
   .portfolio-desc {
     display: inline-block;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .portfolio-desc {
+    display: inline-block;
     width: 396px;
   }
 }
@@ -1260,51 +1339,34 @@ section {
 
 @media screen and (min-width: 320px) {
   .about {
-    padding-top: 50px;
-    padding-bottom: 35px;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about {
-    padding-top: 50px;
-    padding-bottom: 35px;
+    padding-top: 70px;
+    padding-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1170px) {
   .about {
-    height: 822px;
     padding-top: 92px;
-    padding-bottom: 73px;
+    padding-bottom: 71px;
   }
-}
-
-.about .container {
-  position: relative;
 }
 
 @media screen and (min-width: 320px) {
   .about .container {
-    height: 480px;
-    padding-top: 30px;
+    padding-top: 60px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .about .container {
-    height: 659px;
     padding-top: 45px;
-    background-image: url(../images/about-background-images/about-grey-image@1x.png), url(../images/about-background-images/about-long-grey-img@1x.png), url(../images/about-background-images/about-green-img@1x.png);
-    background-repeat: no-repeat;
-    background-position: top 266px left 13px, top 203px left 0, top 242px left 259px;
-    background-size: 301px 331px, 111px 454px, 190px 293px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .about .container .about-container {
-    background-image: url(../images/about-background-images/about-grey-image@2x.png), url(../images/about-background-images/about-long-grey-img@2x.png), url(../images/about-background-images/about-green-img@2x.png);
   }
 }
 
@@ -1327,14 +1389,14 @@ section {
 
 @media screen and (min-width: 768px) {
   .about .main-title {
-    top: 12%;
+    top: 16%;
     left: 50%;
   }
 }
 
 @media screen and (min-width: 1170px) {
   .about .main-title {
-    top: 20%;
+    top: 18%;
     left: 50%;
   }
 }
@@ -1345,32 +1407,80 @@ section {
   }
 }
 
-.about-desc-wraper {
-  position: absolute;
+.about-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
 }
 
 @media screen and (min-width: 320px) {
-  .about-desc-wraper {
-    top: 150px;
-    right: 0;
-    width: 300px;
-    height: 303px;
+  .about-wraper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .about-wraper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background-image: url(../images/about-background-images/about-long-grey-img@1x.png), url(../images/about-background-images/about-green-img@1x.png);
+    background-repeat: no-repeat;
+    background-size: 111px 454px, 190px 293px;
+    background-position: top 0 left 0, top 0 left 230px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about-wraper .about-wraper {
+    background-image: url(../images/about-background-images/about-long-grey-img@2x.png), url(../images/about-background-images/about-green-img@2x.png);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about-wraper {
+    padding-bottom: 61px;
+  }
+}
+
+.about-img {
+  width: 301px;
+  height: 331px;
+}
+
+@media screen and (min-width: 320px) {
+  .about-img {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-img {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about-img {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .about-desc-wraper {
-    top: 150px;
-    right: 0;
-    width: 400px;
-    height: 250px;
+    width: 300px;
   }
 }
 
 @media screen and (min-width: 1170px) {
   .about-desc-wraper {
-    top: 278px;
-    right: 0;
     width: 565px;
     height: 289px;
   }

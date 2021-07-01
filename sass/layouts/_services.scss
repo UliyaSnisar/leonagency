@@ -1,331 +1,393 @@
-// .services{
-//   max-width: 1920px;
-//   margin: 0 auto;
+.services{
 
-//       @media screen and (min-width: 320px) {
-//         height: 875px;
-//         padding-bottom: 75px;
-//       }
+    margin: 0 auto;
+
+      @media screen and (min-width: 320px) {
+        padding-top: 80px;
+        padding-bottom: 75px;
+      }
      
-//       @media screen and (min-width: 768px) {
-//         height: 826px;
-//         padding-top: 67px;
-//         padding-bottom: 103px;
-//       }
+      @media screen and (min-width: 768px) {
+        padding-top: 67px;
+        padding-bottom: 103px;
+      }
     
-//       @media screen and (min-width: 1170px) {
-//         height: 832px;
-//         padding-top: 70px;
-//         padding-bottom: 0;
-//       }
+      @media screen and (min-width: 1170px) {
+        padding-top: 70px;
+      }
 
-//     .container{
+    .container{
 
-//           @media screen and (min-width: 320px) {
-//             height: 800px;
-//             padding-top: 95px;
-//           }
+          @media screen and (min-width: 320px) {
+            padding-top: 50px;
+          }
          
-//           @media screen and (min-width: 768px) {
-//             height: 656px;
-//             padding-top: 45px;
-//           }
+          @media screen and (min-width: 768px) {
+            padding-top: 45px;
+          }
         
-//           @media screen and (min-width: 1170px) {
-//             padding-top: 90px;
-//           }
-//     }
+          @media screen and (min-width: 1170px) {
+            padding-top: 90px;
+          }
+    }
 
-//     .main-title {
-//         color: $strong-title-color;
+    .main-title {
+        color: $strong-title-color;
 
-//           @media screen and (min-width: 320px) {
-//             top: 10%;
-//             left: 50%;
-//           }
+          @media screen and (min-width: 320px) {
+            top: 9%;
+            left: 50%;
+          }
          
-//           @media screen and (min-width: 768px) {
-//             top: 13%;
-//             left: 50%;
-//           }
+          @media screen and (min-width: 768px) {
+            top: 9%;
+            left: 50%;
+          }
         
-//           @media screen and (min-width: 1170px) {
-//             top: 15%;
-//             left: 50%;
-//           }
-//     }
+          @media screen and (min-width: 1170px) {
+            top: 15%;
+            left: 50%;
+          }
+    }
 
-//     .subtitle{   
-//           @media screen and (min-width: 1170px) {
-//             margin-bottom: 148px;
-//           }
-//     }
-// }
+    .subtitle{   
+          @media screen and (min-width: 1170px) {
+            margin-bottom: 148px;
+          }
+    }
+}
 
-// // .services-list{
-// //     display: flex;
-// //     flex-wrap: wrap;
+.services-wraper{
+    display: flex;
+    background-repeat: no-repeat;
+ 
 
-// //     @media screen and (min-width: 320px) {
-// //         margin-left: 15px;
-// //       }
+    @media screen and (min-width: 320px) {
+    flex-wrap: wrap;
+
+    background-image: url(../images/services-background-images/services-path@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .services-wraper {
+        background-image: url(../images/services-background-images/services-path@1x.png);
+        }
+    }
+    background-position: bottom 0 right 0; 
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         margin-left: 0;
-// //       }
-// // }
-
-// // .services-list-item:nth-child(2n + 1){
-// //     margin-right: 20px;
-
-// //     @media screen and (min-width: 1170px) {
-// //       margin-right: 63px;
-// //     }
-// // }
-
-// // .printer{
-// //       @media screen and (min-width: 320px) {
-// //         width: 265px;
-// //         margin-bottom: 10px;
-// //       }
-     
-// //       @media screen and (min-width: 768px) {
-// //         width: 300px;
-// //         height: 151px;
-// //         margin-bottom: 46px;
-// //       }
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/services-background-images/services-path@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            .services-wraper {
+            background-image: url(../images/services-background-images/services-path@1x.png);
+            }
+        }
+        background-position: bottom 0 right 0; 
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 341px;
-// //         height: 152px;
-// //         margin-bottom: 46px;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        height: 436px;
+        background-image: url(../images/services-background-images/services-path@1x.png);
+        @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+            .services-wraper {
+            background-image: url(../images/services-background-images/services-path@1x.png);
+            }
+        }
 
-// // .file{
-// //       @media screen and (min-width: 320px) {
-// //         width: 265px;
-// //         margin-bottom: 10px;
-// //       }
+        background-position: top 0 right 0;
+      }
+}
+
+.services-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 320px) {
+        margin-left: 15px;
+        margin-bottom: 80px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 300px;
-// //         height: 121px;
-// //         margin-bottom: 75px;
-// //       }
-    
-// //       @media screen and (min-width: 1170px) {
-// //         width: 358px;
-// //         height: 122px;
-// //         margin-bottom: 75px;
-// //       }
-// // }
+      @media screen and (min-width: 768px) and (max-width: 1169px){
+        justify-content: center;
+        margin-left: 0;
+      }
 
-// // .message{
-// //       @media screen and (min-width: 320px) {
-// //         width: 265px;
-// //         margin-bottom: 10px;
-// //       }
+      @media screen and (min-width: 1170px) {
+          width: 813px;
+          margin-left: 0;
+          margin-bottom: 0;
+
+      }
+}
+
+.services-list-item:nth-child(2n + 1){
+    margin-right: 20px;
+
+    @media screen and (min-width: 1170px) {
+      margin-right: 63px;
+    }
+}
+
+.printer{
+      @media screen and (min-width: 320px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 300px;
-// //         height: 153px;
-// //         margin-bottom: 0;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        margin-bottom: 46px;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 337px;
-// //         height: 151px;
-// //         margin-bottom: 0;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 341px;
+        margin-bottom: 46px;
+      }
+}
 
-// // .monitor{
-// //       @media screen and (min-width: 320px) {
-// //         width: 265px;
-// //         margin-bottom: 10px;
-// //       }
+.file{
+      @media screen and (min-width: 320px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 300px;
-// //         height: 122px;
-// //         margin-bottom: 0;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        margin-bottom: 75px;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 369px;
-// //         height: 122px;
-// //         margin-bottom: 0;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 358px;
+        margin-bottom: 75px;
+      }
+}
 
-// // .services-desc-title{
-// //     color: $black-title-color;
-// // }
-
-// // .printer-icon::before{
-// //     display: inline-block;
-// //     content: '';
-// //     background-image: url(../images/services-images/printer-icon@1x.png);
-// //     @media screen and (min-device-pixel-ratio: 2),
-// //         screen and (min-resolution: 192dpi),
-// //         screen and (min-resolution: 2dppx) {
-// //         .printer {
-// //         background-image: url(../images/services-images/printer-icon@2x.png);
-// //         }
-// //     }
-// //     background-size: contain;
-// //     background-repeat: no-repeat;
-// //     vertical-align: text-top;
-
-// //       @media screen and (min-width: 320px) {
-// //         width: 25px;
-// //         height: 25px;
-// //         margin-right: 25px;
-// //       }
+.message{
+      @media screen and (min-width: 320px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 30px;
-// //         height: 30px;
-// //         margin-right: 30px;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        margin-bottom: 0;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 38px;
-// //         height: 37px;
-// //         margin-right: 50px;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 337px;
+        margin-bottom: 0;
+      }
+}
 
-// // .file-icon::before{
-// //     display: inline-block;
-// //     content: '';
-// //     background-image: url(../images/services-images/file-icon@1x.png);
-// //     @media screen and (min-device-pixel-ratio: 2),
-// //         screen and (min-resolution: 192dpi),
-// //         screen and (min-resolution: 2dppx) {
-// //         .printer {
-// //         background-image: url(../images/services-images/file-icon@2x.png);
-// //         }
-// //     }
-// //     background-size: contain;
-// //     background-repeat: no-repeat;
-// //     vertical-align: text-top;
-
-// //       @media screen and (min-width: 320px) {
-// //         width: 25px;
-// //         height: 25px;
-// //         margin-right: 25px;
-// //       }
+.monitor{
+      @media screen and (min-width: 320px) {
+        width: 265px;
+        margin-bottom: 10px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 30px;
-// //         height: 30px;
-// //         margin-right: 30px;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 300px;
+        margin-bottom: 0;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 38px;
-// //         height: 37px;
-// //         margin-right: 46px;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 369px;
+        margin-bottom: 0;
+      }
+}
 
-// // .message-icon::before{
-// //     display: inline-block;
-// //     content: '';
-// //     background-image: url(../images/services-images/message-icon@1x.png);
-// //     @media screen and (min-device-pixel-ratio: 2),
-// //         screen and (min-resolution: 192dpi),
-// //         screen and (min-resolution: 2dppx) {
-// //         .printer {
-// //         background-image: url(../images/services-images/message-icon@2x.png);
-// //         }
-// //     }
-// //     background-size: contain;
-// //     background-repeat: no-repeat;
-// //     vertical-align: text-top;
+.services-desc-title{
+    color: $black-title-color;
+}
 
-// //       @media screen and (min-width: 320px) {
-// //         width: 25px;
-// //         height: 25px;
-// //         margin-right: 25px;
-// //       }
+.printer-icon::before{
+    display: inline-block;
+    content: '';
+    background-image: url(../images/services-images/printer-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/printer-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+
+      @media screen and (min-width: 320px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 30px;
-// //         height: 30px;
-// //         margin-right: 30px;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 39px;
-// //         height: 36px;
-// //         margin-right: 47px;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 38px;
+        height: 37px;
+        margin-right: 50px;
+      }
+}
 
-// // .monitor-icon::before{
-// //     display: inline-block;
-// //     content: '';
-// //     background-image: url(../images/services-images/monitor-icon@1x.png);
-// //     @media screen and (min-device-pixel-ratio: 2),
-// //         screen and (min-resolution: 192dpi),
-// //         screen and (min-resolution: 2dppx) {
-// //         .printer {
-// //         background-image: url(../images/services-images/monitor-icon@2x.png);
-// //         }
-// //     }
-// //     background-size: contain;
-// //     background-repeat: no-repeat;
-// //     vertical-align: text-top;
+.file-icon::before{
+    display: inline-block;
+    content: '';
+    background-image: url(../images/services-images/file-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/file-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
 
-// //       @media screen and (min-width: 320px) {
-// //         width: 25px;
-// //         height: 25px;
-// //         margin-right: 25px;
-// //       }
+      @media screen and (min-width: 320px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         width: 30px;
-// //         height: 30px;
-// //         margin-right: 30px;
-// //       }
+      @media screen and (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         width: 42px;
-// //         height: 31px;
-// //         margin-right: 45px;
-// //       }
-// // }
+      @media screen and (min-width: 1170px) {
+        width: 38px;
+        height: 37px;
+        margin-right: 46px;
+      }
+}
 
-// // .services-desc-text{
-// //     display: inline-block;
-// //     color: $main-text-color;
-// //     margin-top: 0;
-// //     margin-bottom: 0;
+.message-icon::before{
+    display: inline-block;
+    content: '';
+    background-image: url(../images/services-images/message-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/message-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
 
-// //       @media screen and (min-width: 320px) {
-// //         margin-left: 45px;
+      @media screen and (min-width: 320px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        width: 39px;
+        height: 36px;
+        margin-right: 47px;
+      }
+}
+
+.monitor-icon::before{
+    display: inline-block;
+    content: '';
+    background-image: url(../images/services-images/monitor-icon@1x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .printer {
+        background-image: url(../images/services-images/monitor-icon@2x.png);
+        }
+    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+
+      @media screen and (min-width: 320px) {
+        width: 25px;
+        height: 25px;
+        margin-right: 25px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+        margin-right: 30px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        width: 42px;
+        height: 31px;
+        margin-right: 45px;
+      }
+}
+
+.services-desc-text{
+    display: inline-block;
+    color: $main-text-color;
+    margin-top: 0;
+    margin-bottom: 0;
+
+      @media screen and (min-width: 320px) {
+        margin-left: 45px;
         
-// //         .text{
-// //             font-size: 7px;
-// //             line-height: 20px;
-// //         }
-// //       }
+        .text{
+            font-size: 7px;
+            line-height: 20px;
+        }
+      }
      
-// //       @media screen and (min-width: 768px) {
-// //         margin-left: 60px;
+      @media screen and (min-width: 768px) {
+        margin-left: 60px;
         
-// //         .text{
-// //             font-size: 7px;
-// //             line-height: 20px;
-// //         }
-// //       }
+        .text{
+            font-size: 7px;
+            line-height: 20px;
+        }
+      }
     
-// //       @media screen and (min-width: 1170px) {
-// //         margin-left: 85px;
-// //         line-height: 27px;
-// //       }
+      @media screen and (min-width: 1170px) {
+        margin-left: 85px;
+        line-height: 27px;
+      }
 
-// // }
+}
+
+.services-img{
+    width: 301px;
+    height: 331px;
+
+    @media screen and (min-width: 320px) {
+        margin-bottom: 52px;
+      }
+     
+      @media screen and (min-width: 768px) {
+        margin-top: 53px;
+        margin-left: 430px;
+      }
+    
+      @media screen and (min-width: 1170px) {
+        margin-top: 53;
+        margin-left: 0;
+      }
+
+}
